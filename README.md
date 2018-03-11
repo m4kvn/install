@@ -7,11 +7,14 @@ Installing various programs
 ### xcode-select
 
 ```
-curl -s https://m4kvn.github.io/install/installer/xcode-select | sh
+curl -sL https://github.com/m4kvn/install/raw/master/installer/xcode-select.sh | sh
 ```
 
 ### Homebrew
 
 ```
-curl -s https://m4kvn.github.io/install/installer/homebrew | sh
+curl -sL https://github.com/m4kvn/install/raw/master/installer/homebrew.sh | sh
 ```
+
+- Git: `curl -sL https://github.com/m4kvn/install/raw/master/installer/homebrew/git.sh | sh`
+
