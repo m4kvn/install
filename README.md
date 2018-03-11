@@ -2,6 +2,12 @@
 
 Installing various programs
 
+### Setup
+
+```
+curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
+```
+
 ## Separately
 
 ### xcode-select
