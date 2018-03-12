@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew install tig
+if [ ! $(brew list | grep -w tig) ]; then
+    brew install tig
+fi
