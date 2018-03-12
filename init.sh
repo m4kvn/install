@@ -5,10 +5,10 @@ if [ ! $(xcode-select -p 2>/dev/null) ]; then
     exit 1
 fi
 
-curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh -eu
+curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
 
 dir=$HOME/.install
 
-sh -eu $dir/installer/application.sh
-sh -eu $dir/installer/homebrews.sh
-sh -eu $dir/installer/zplug.sh
+sh $dir/installer/application.sh
+sh $dir/installer/homebrews.sh
+sh $dir/installer/zplug.sh
