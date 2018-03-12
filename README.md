@@ -18,6 +18,20 @@ Install:
 
 and clone this repository to ~/.install
 
+### Initialize
+
+Execute setup beforehand
+
+```
+curl -sL https://github.com/m4kvn/install/raw/master/init.sh | sh
+```
+
+Install:
+
+- applications
+- homebrews
+- zplug
+
 ## Separately
 
 ### xcode-select

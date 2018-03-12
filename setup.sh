@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -eu
 
 if [ ! $(xcode-select -p 2>/dev/null) ]; then
     printf '`xcode-select --install` is not running'
@@ -8,8 +8,8 @@ fi
 github=https://github.com/m4kvn
 install=$github/install/raw/master
 
-curl -sL $install/installer/homebrew.sh | sh
-curl -sL $install/installer/homebrew/git.sh | sh
+curl -sL $install/installer/homebrew.sh | sh -eu
+curl -sL $install/installer/homebrew/git.sh | sh -eu
 
 dir=$HOME/.install
 
