@@ -13,8 +13,8 @@ curl -sL $install/installer/homebrew/git.sh | sh
 
 dir=$HOME/.install
 
-[ -d "$dir" ] && \
-    echo "$dir is already exists" && \
-    exit 1
-
-git clone https://github.com/m4kvn/install.git $dir
+if [ -d "$dir" ]; then
+    cd $dir && git fetch && git pull origin master
+else
+    git clone https://github.com/m4kvn/install.git $dir
+fi
