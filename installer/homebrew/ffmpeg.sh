@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew install ffmpeg
+if [ ! $(brew list | grep -w ffmpeg) ]; then
+    brew install ffmpeg
+fi
