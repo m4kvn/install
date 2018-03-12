@@ -9,6 +9,6 @@ curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
 
 dir=$HOME/.install
 
-sh $dir/installer/application.sh
+sh $dir/installer/applications.sh
 sh $dir/installer/homebrews.sh
 sh $dir/installer/zplug.sh
