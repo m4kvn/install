@@ -2,5 +2,5 @@
 
 brew install zsh
 zsh=$(which zsh)
-sudo echo $zsh >> /etc/shells
+echo $zsh | sudo tee -a /etc/shells
 chsh -s $zsh
