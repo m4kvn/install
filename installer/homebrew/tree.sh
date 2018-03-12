@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew install tree
+if [ ! $(brew list | grep -w tree) ]; then
+    brew install tree
+fi
