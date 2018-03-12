@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install google-chrome
+if [ ! $(brew cask list | grep -w google-chorme) ]; then
+    brew cask install google-chrome
+fi

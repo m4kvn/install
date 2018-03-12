@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install android-studio
+if [ ! $(brew cask list | grep -w android-studio) ]; then
+    brew cask install android-studio
+fi

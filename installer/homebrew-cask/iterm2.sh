@@ -1,3 +1,5 @@
 #!/bin.sh
 
-brew cask install iterm2
+if [ ! $(brew cask list | grep -w iterm2) ]; then
+    brew cask install iterm2
+fi

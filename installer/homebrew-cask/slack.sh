@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install slack
+if [ ! $(brew cask list | grep -w slack) ]; then
+    brew cask install slack
+fi

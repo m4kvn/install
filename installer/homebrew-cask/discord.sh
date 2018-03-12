@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install discord
+if [ ! $(brew cask list | grep -w discord) ]; then
+    brew cask install discord
+fi

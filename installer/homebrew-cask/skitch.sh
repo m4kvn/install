@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install skitch
+if [ ! $(brew cask list | grep -w skitch) ]; then
+    brew cask install skitch
+fi

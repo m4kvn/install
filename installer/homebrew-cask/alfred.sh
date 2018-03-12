@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install alfred
+if [ ! $(brew cask list | grep -w alfred) ]; then
+    brew cask install alfred
+fi

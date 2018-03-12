@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install sketch
+if [ ! $(brew cask list | grep -w sketch) ]; then
+    brew cask install sketch
+fi

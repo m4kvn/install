@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install 1password
+if [ ! $(brew cask list | grep -w 1password) ]; then
+    brew cask install 1password
+fi

@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install skype
+if [ ! $(brew cask list | grep -w skype) ]; then
+    brew cask install skype
+fi

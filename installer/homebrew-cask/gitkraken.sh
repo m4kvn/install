@@ -1,3 +1,5 @@
 #!/bin/sh
 
-brew cask install gitkraken
+if [ ! $(brew cask list | grep -w gitkraken) ]; then
+    brew cask install gitkraken
+fi
