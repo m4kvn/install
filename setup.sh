@@ -3,7 +3,6 @@
 github=https://github.com/m4kvn
 install=$github/install/raw/master
 
-curl -sL $install/installer/xcode-select.sh | sh
 curl -sL $install/installer/homebrew.sh | sh
 curl -sL $install/installer/homebrew/git.sh | sh
 

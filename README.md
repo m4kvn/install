@@ -4,6 +4,8 @@ Installing various programs
 
 ### Setup
 
+Execute `xcode-select --install` beforehand
+
 ```
 curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
 ```
