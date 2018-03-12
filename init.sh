@@ -12,3 +12,4 @@ dir=$HOME/.install
 sh $dir/installer/applications.sh
 sh $dir/installer/homebrews.sh
 sh $dir/installer/etc.sh
+sh $dir/installer/gems.sh
