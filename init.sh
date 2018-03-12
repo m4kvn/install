@@ -11,4 +11,4 @@ dir=$HOME/.install
 
 sh $dir/installer/applications.sh
 sh $dir/installer/homebrews.sh
-sh $dir/installer/zplug.sh
+sh $dir/installer/etc.sh
