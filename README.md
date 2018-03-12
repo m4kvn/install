@@ -4,6 +4,10 @@ Installing various programs
 
 ### Setup
 
+```
+curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
+```
+
 Install:
 
 - xcode-select
@@ -11,10 +15,6 @@ Install:
 - Git
 
 and clone this repository to ~/.install
-
-```
-curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
-```
 
 ## Separately
 
