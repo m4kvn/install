@@ -4,6 +4,14 @@ Installing various programs
 
 ### Setup
 
+Install:
+
+- xcode-select
+- Homebrew
+- Git
+
+and clone this repository to ~/.install
+
 ```
 curl -sL https://github.com/m4kvn/install/raw/master/setup.sh | sh
 ```
