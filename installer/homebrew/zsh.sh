@@ -1,4 +1,6 @@
 #!/bin/sh
 
 brew install zsh
-chsh -s /usr/local/bin/zsh
+zsh=$(which zsh)
+sudo echo $zsh >> /etc/shells
+chsh -s $zsh
