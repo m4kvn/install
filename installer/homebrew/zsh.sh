@@ -10,6 +10,6 @@ if [ ! $(cat /etc/shells | grep $zsh) ]; then
     echo $zsh | sudo tee -a /etc/shells
 fi
 
-if expr "$SHELL" : "$zsh" > /dev/null; then
+if ! expr "$SHELL" : "$zsh" > /dev/null; then
     chsh -s $zsh
 fi
