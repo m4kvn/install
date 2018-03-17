@@ -1,9 +1,13 @@
 #!/bin/sh
 
-if [ ! -n "$(brew cask list | grep -w atom)" ]; then
-    brew cask install atom
+if [ ! -s ~/.atom ]; then
+    git clone https://github.com/m4kvn/atom.git ~/.atom
+else
+    cd ~/.atom
+    git fetch
+    git pull origin master
 fi
 
-if [ ! -s ~/.atom/packages/sync-settings ]; then
-    apm install sync-settings
+if [ ! -n "$(brew cask list | grep -w atom)" ]; then
+    brew cask install atom
 fi
