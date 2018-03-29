@@ -6,7 +6,7 @@ root=~/.ndenv
 ndenv=$root/bin/ndenv
 
 if [ ! -s $root ]; then
-    git clone $github/rbenv.git $root
+    git clone $github/ndenv.git $root
 fi
 
 if [ ! -s $root/plugins/node-build ]; then
